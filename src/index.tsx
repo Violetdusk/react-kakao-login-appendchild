@@ -19,7 +19,7 @@ export default class KakaoLogin extends PureComponent<KakaoLoginProps> {
         js.src = '//developers.kakao.com/sdk/js/kakao.min.js';
         js.onload = cb;
 
-        document.body.append(js);
+        document.body.appendChild(js);
       }
     })('kakao-sdk', () => {
       window.Kakao.init(jsKey);
